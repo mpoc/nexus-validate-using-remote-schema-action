@@ -23,7 +23,7 @@ const betterAjvErrors = require("better-ajv-errors");
 
         if (!response.ok) {
             const errorText = response.statusText;
-            throw new Error(`Invalid response from server ${endpoint}: ${errorText}`);
+            throw new Error(`Invalid response from server ${apiEndpoint}: ${errorText}`);
         }
 
         const jsonSchema = await response.json()

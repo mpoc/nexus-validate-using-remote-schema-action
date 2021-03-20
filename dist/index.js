@@ -46,7 +46,7 @@ const betterAjvErrors = __nccwpck_require__(3450);
 
         if (!response.ok) {
             const errorText = response.statusText;
-            throw new Error(`Invalid response from server ${endpoint}: ${errorText}`);
+            throw new Error(`Invalid response from server ${apiEndpoint}: ${errorText}`);
         }
 
         const jsonSchema = await response.json()
