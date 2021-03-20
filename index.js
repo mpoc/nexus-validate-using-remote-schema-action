@@ -3,6 +3,7 @@ const fs = require('fs');
 const yaml = require('js-yaml');
 const fetch = require('node-fetch');
 const Ajv = require("ajv").default;
+const addFormats = require("ajv-formats");
 const betterAjvErrors = require("better-ajv-errors");
 
 (async () => {
@@ -26,6 +27,7 @@ const betterAjvErrors = require("better-ajv-errors");
         
         // Validate grader config file
         const ajv = new Ajv();
+        addFormats(ajv);
         const validate = ajv.compile(jsonSchema);
         const valid = validate(convertedFile);
         if (valid) {
