@@ -1,0 +1,15 @@
+name: 'YAML file validation using a remote JSON schema'
+description: 'Validates a YAML file by converting it to JSON and validating it using a JSON schema retrieved from a remote API endpoint.'
+branding:
+  icon: 'umbrella'
+  color: 'purple'
+inputs:
+  api-endpoint:
+    description: 'The HTTP API endpoint which returns the JSON schema.'
+    required: true
+  yaml-file:
+    description: 'The name of the YAML file to validate.'
+    required: true
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
