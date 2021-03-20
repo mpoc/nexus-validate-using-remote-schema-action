@@ -22,7 +22,7 @@ const betterAjvErrors = require("better-ajv-errors");
             .catch(error => { throw new Error(`Invalid request to server: ${error.message}`) });
 
         if (!response.ok) {
-            const errorText = response.statusText;
+            const errorText = `${response.statusText} - ${await response.text()}`;
             throw new Error(`Invalid response from server ${apiEndpoint}: ${errorText}`);
         }
 
