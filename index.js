@@ -22,8 +22,6 @@ const betterAjvErrors = require("better-ajv-errors");
             .catch(error => { throw new Error(`Invalid request to server: ${error.message}`) });
         const jsonSchema = await response.json()
             .catch(error => { throw new Error(`Unable to parse JSON from server response: ${error.message}`) });
-        console.log('API response:')
-        console.log(jsonSchema);
         
         // Validate grader config file
         const ajv = new Ajv();
