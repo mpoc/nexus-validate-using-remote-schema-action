@@ -2,6 +2,8 @@ const core = require('@actions/core');
 const fs = require('fs');
 const yaml = require('js-yaml');
 const fetch = require('node-fetch');
+const Ajv = require("ajv").default;
+const betterAjvErrors = require("better-ajv-errors");
 
 (async () => {
     try {
