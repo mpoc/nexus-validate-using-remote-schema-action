@@ -1,5 +1,5 @@
 {
-  "name": "nexus-validate-against-remote-schema-action",
+  "name": "nexus-validate-using-remote-schema-action",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,13 +8,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mpoc/nexus-validate-against-remote-schema-action.git"
+    "url": "git+https://github.com/mpoc/nexus-validate-using-remote-schema-action.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mpoc/nexus-validate-against-remote-schema-action/issues"
+    "url": "https://github.com/mpoc/nexus-validate-using-remote-schema-action/issues"
   },
-  "homepage": "https://github.com/mpoc/nexus-validate-against-remote-schema-action#readme"
+  "homepage": "https://github.com/mpoc/nexus-validate-using-remote-schema-action#readme"
 }
