@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/mpoc/nexus-validate-using-remote-schema-action/issues"
   },
-  "homepage": "https://github.com/mpoc/nexus-validate-using-remote-schema-action#readme"
+  "homepage": "https://github.com/mpoc/nexus-validate-using-remote-schema-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "js-yaml": "^4.0.0",
+    "node-fetch": "^2.6.1"
+  }
 }
