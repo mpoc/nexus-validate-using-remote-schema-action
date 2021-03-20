@@ -20,6 +20,12 @@ const betterAjvErrors = require("better-ajv-errors");
         // Fetch JSON schema
         const response = await fetch(apiEndpoint)
             .catch(error => { throw new Error(`Invalid request to server: ${error.message}`) });
+
+        if (!response.ok) {
+            const errorText = response.statusText;
+            throw new Error(`Invalid response from server ${endpoint}: ${errorText}`);
+        }
+
         const jsonSchema = await response.json()
             .catch(error => { throw new Error(`Unable to parse JSON from server response: ${error.message}`) });
         
