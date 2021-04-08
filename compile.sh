@@ -1,2 +1,2 @@
 #!/bin/sh
-ncc build index.js --license licenses.txt
+ncc build index.js --license licences.txt
